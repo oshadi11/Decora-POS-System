@@ -1,0 +1,36 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.main-container {
+    display: grid;
+    grid-template-columns: 33% 1fr;
+    min-height: 100vh;
+}
+
+.side-bar {
+    background-color: #24152F;
+}
+
+.dashboard-content {
+    background-color: #F6F0E8;
+}
+.logo{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.logo img{
+    width: 30%;
+}
+.logo-name{
+    color: #a5803bd7;
+    font-family: "logoFont";
+    font-size: 36px;
+}
+
+@font-face {
+    font-family: "logoFont";
+    src: url(../font/Runethia.otf);
+}
