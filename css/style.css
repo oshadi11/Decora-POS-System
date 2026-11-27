@@ -90,9 +90,37 @@
 
 .stats-section {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(3, minmax(0, 1fr));
     gap: 15px;
 }
+.stat-icon {
+    width: 48px;
+    height: 48px;
+    min-width: 48px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 22px;
+    color: #49334F;
+    background-color: rgba(255,255,255,0.75);
+}
+
+.stat-card {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 20px 15px;
+    border-radius: 15px;
+    background-color: #3a3439;
+    transition: 0.3s;
+}
+
+.stat-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 10px rgba(133, 126, 138, 0.08);
+}
+
 
 .welcome-section {
     min-height: 260px;
