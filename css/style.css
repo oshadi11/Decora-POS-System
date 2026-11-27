@@ -68,7 +68,98 @@
     transform: translateX(4px);
     transition: 0.5s;
 }
+.dashboard-content {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) 280px;
+    gap: 20px;
+    padding: 25px;
+    background-color: #1c181d;
+}
 
+.dashboard-main {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.dashboard-right {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.stats-section {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+}
+
+.welcome-section {
+    min-height: 260px;
+    border-radius: 18px;
+    overflow: hidden;
+
+    background:
+        linear-gradient(
+            90deg,
+            rgba(36,21,47,0.95),
+            rgba(36,21,47,0.35)
+        ),
+        url("../img/banner.jpg");
+
+    background-size: cover;
+    background-position: center;
+
+    display: flex;
+    align-items: center;
+    padding: 30px;
+    color: var(--white);
+}
+
+.welcome-content {
+    max-width: 480px;
+}
+
+.welcome-small {
+    color: #a5803bd7;
+    letter-spacing: 3px;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.welcome-content h1 {
+    font-size: 27px;
+    margin: 10px 0 0;
+    font-family: Georgia, serif;
+}
+
+.welcome-content h2 {
+    font-size: 42px;
+    color: #a5803bd7;
+    font-family: Georgia, serif;
+    font-style: italic;
+}
+
+.welcome-description {
+    font-size: 13px;
+    color: #E9DFE9;
+    margin: 12px 0 20px;
+}
+
+.primary-btn {
+    background-color: #a5803bd7;
+    color: var(--midnight-plum);
+    border: none;
+    border-radius: 8px;
+    padding: 11px 18px;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.primary-btn:hover {
+    background-color: #ae8943;
+    transform: translateY(-2px);
+}
 
 
 @font-face {
