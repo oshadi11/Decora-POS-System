@@ -42,17 +42,17 @@
                 <div class="row g-3">
                     <div class="col-md-6">
                         <label>Customer Name *</label>
-                        <input type="text" class="form-control" placeholder="Enter customer name" required>
+                        <input type="text" class="form-control" id="customerName" placeholder="Enter customer name" required>
                     </div>
 
                     <div class="col-md-6">
                         <label>Contact Number *</label>
-                        <input type="tel" class="form-control" placeholder="07XXXXXXXX" required>
+                        <input type="tel" id="phone" class="form-control" placeholder="07XXXXXXXX" required>
                     </div>
 
                     <div class="col-md-6">
                         <label>Email Address</label>
-                        <input type="email" class="form-control" placeholder="example@email.com">
+                        <input type="email" class="form-control"  id="email" placeholder="example@email.com">
                     </div>
 
                     <div class="col-md-6">
@@ -75,8 +75,8 @@
 
                     <div class="col-md-6">
                         <label>Event Type *</label>
-                        <select class="form-select" required>
-                            <option value="">Select event type</option>
+                        <select class="form-select" id="eventType" required>
+                            <option value="" >Select event type</option>
                             <option>Wedding</option>
                             <option>Birthday Party</option>
                             <option>Engagement</option>
@@ -98,7 +98,7 @@
 
                     <div class="col-md-6">
                         <label>Venue Name *</label>
-                        <input type="text" class="form-control" placeholder="Enter venue name" required>
+                        <input type="text" class="form-control" id="eventLocation" placeholder="Enter venue name" required>
                     </div>
 
                     <div class="col-md-6">
@@ -195,12 +195,7 @@
     </main>
 </div>
 
-<script>
-document.getElementById("bookingForm").addEventListener("submit", function(e) {
-    e.preventDefault();
-    alert("Booking form completed! Database integration can be added next.");
-});
-</script>
+<script src="js/booking.js"></script>
 
 </body>
 </html>
