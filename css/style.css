@@ -1,7 +1,8 @@
-*{
+* {
     margin: 0;
     padding: 0;
 }
+
 .main-container {
     display: grid;
     grid-template-columns: 250px 1fr;
@@ -15,28 +16,32 @@
 .dashboard-content {
     background-color: #F6F0E8;
 }
-.logo{
+
+.logo {
     margin-top: 20px;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
-.logo img{
+
+.logo img {
     width: 30%;
 }
-.logo-name{
+
+.logo-name {
     color: #a5803bd7;
     font-family: "logoFont";
     font-size: 36px;
 }
 
-.sidebar-menu{
+.sidebar-menu {
     display: flex;
     flex-direction: column;
     align-items: stretch;
     margin-top: 15px;
 
 }
+
 .menu-item {
     display: flex;
     align-items: center;
@@ -46,7 +51,7 @@
     padding: 13px 35px;
     box-sizing: border-box;
     border-radius: 30px;
-    
+
 }
 
 .menu-item-icon {
@@ -68,12 +73,13 @@
     transform: translateX(4px);
     transition: 0.5s;
 }
+
 .dashboard-content {
     display: grid;
     grid-template-columns: minmax(0, 1fr) 280px;
     gap: 20px;
     padding: 25px;
-    background-color: #1c181d;
+    background-color: #473a4a;
 }
 
 .dashboard-main {
@@ -93,6 +99,7 @@
     grid-template-columns: repeat(3, minmax(0, 1fr));
     gap: 15px;
 }
+
 .stat-icon {
     width: 48px;
     height: 48px;
@@ -103,7 +110,7 @@
     align-items: center;
     font-size: 22px;
     color: #49334F;
-    background-color: rgba(255,255,255,0.75);
+    background-color: rgba(255, 255, 255, 0.75);
 }
 
 .stat-card {
@@ -112,8 +119,10 @@
     gap: 15px;
     padding: 20px 15px;
     border-radius: 15px;
-    background-color: #b582ac5a;
+    background-color: #8a63835a;
     transition: 0.3s;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+    ;
 }
 
 .stat-card:hover {
@@ -128,11 +137,9 @@
     overflow: hidden;
 
     background:
-        linear-gradient(
-            90deg,
-            rgba(36,21,47,0.95),
-            rgba(36,21,47,0.35)
-        ),
+        linear-gradient(90deg,
+            rgba(36, 21, 47, 0.95),
+            rgba(36, 21, 47, 0.35)),
         url("../img/banner.jpg");
 
     background-size: cover;
@@ -145,7 +152,7 @@
 }
 
 .welcome-content {
-    max-width: 480px;
+    max-width: 460px;
 }
 
 .welcome-small {
@@ -162,10 +169,11 @@
 }
 
 .welcome-content h2 {
-    font-size: 42px;
+    font-size: 50px;
+    margin-top: 10px;
     color: #a5803bd7;
-    font-family: Georgia, serif;
-    font-style: italic;
+    font-family: "logoFont";
+    
 }
 
 .welcome-description {
@@ -176,25 +184,32 @@
 
 .primary-btn {
     background-color: #a5803bd7;
-    color: var(--midnight-plum);
+    color: #24152F;
     border: none;
     border-radius: 8px;
     padding: 11px 18px;
     font-weight: 600;
     transition: 0.3s;
 }
-.section-heading{
+
+.section-heading {
     display: flex;
     justify-content: space-between;
-    margin: 10px;
+    margin-bottom: 10px;
 }
+.section-heading a{
+    color: #C6A66B;
+    font-size: 14px;
+}
+
 .primary-btn:hover {
     background-color: #ae8943;
     transform: translateY(-2px);
 }
+
 .packages-section {
     background-color: var(--white);
-    border: 1px solid #E9DFD1;
+    border: 1px solid #b582ac5a;
     border-radius: 15px;
     padding: 20px;
 }
@@ -215,7 +230,7 @@
 
 .package-card:hover {
     transform: translateY(-5px);
-    box-shadow: 0 8px 20px rgba(36,21,47,0.12);
+    box-shadow: 0 8px 20px rgba(36, 21, 47, 0.12);
 }
 
 .package-card img {
@@ -246,6 +261,175 @@
     font-weight: 700;
     color: #9C7843;
     margin: 0;
+}
+
+.dashboard-right {
+    gap: 18px;
+}
+
+.time-card {
+    position: relative;
+    overflow: hidden;
+    background: rgba(73, 51, 79, 0.35);
+    border: 1px solid rgba(246, 240, 232, 0.2);
+    border-radius: 16px;
+    color: #F6F0E8;
+    padding: 22px;
+}
+
+.date-display {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 12px;
+    margin-bottom: 20px;
+}
+
+.date-display i {
+    color: #9C7843;
+}
+.greet-msg{
+    font-size: 18px;
+    margin-top: 15px;
+    font-family: "logoFont";
+}
+.quick-actions {
+    background-color: rgba(73, 51, 79, 0.35);
+    border: 1px solid #b582ac5a;
+    border-radius: 15px;
+    padding: 17px;
+}
+
+.actions-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 11px;
+}
+
+.action-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 12px 4px;
+    border: 1px solid #b582ac5a;
+    border-radius: 12px;
+    background-color: #43344364;
+    color: var(--royal-plum);
+    transition: 0.3s;
+}
+
+.action-card i {
+    font-size: 20px;
+    color: #9C7843;
+}
+
+.action-card span {
+    font-size: 11px;
+    font-weight: 600;
+}
+
+.action-card:hover {
+    background-color: var(--midnight-plum);
+    color: var(--ivory);
+    transform: translateY(-3px);
+}
+
+.inventory-alert {
+    background: rgba(73, 51, 79, 0.35);
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+
+    border: 1px solid #b582ac5a;
+    border-radius: 15px;
+    padding: 20px;
+}
+
+.inventory-alert .section-heading h3 {
+    color: #F6F0E8;
+}
+
+.inventory-alert .section-heading a {
+    color: #C6A66B;
+}
+
+.inventory-alert-list {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.inventory-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 12px 0;
+    border-bottom: 1px solid rgba(246, 240, 232, 0.1);
+}
+
+
+
+.inventory-item-info {
+    flex: 1;
+    min-width: 0;
+}
+
+.inventory-item-info h4 {
+    font-size: 12px;
+    color: #F6F0E8;
+    margin-bottom: 4px;
+}
+
+.inventory-item-info p {
+    font-size: 10px;
+    color: #B9AEBB;
+    margin: 0;
+}
+
+.inventory-quantity {
+    text-align: right;
+}
+
+.inventory-quantity h4 {
+    font-size: 17px;
+    color: #F6F0E8;
+    margin-bottom: 4px;
+}
+
+.inventory-quantity span {
+    font-size: 9px;
+    padding: 4px 7px;
+    border-radius: 20px;
+    white-space: nowrap;
+}
+
+.stock-low {
+    background: rgba(214, 92, 108, 0.2);
+    color: #FF9CA8;
+}
+
+.stock-warning {
+    background: rgba(198, 166, 107, 0.2);
+    color: #E7C98E;
+}
+
+.restock-btn {
+    width: 100%;
+    margin-top: 18px;
+    padding: 11px;
+    border: 1px solid #C6A66B;
+    border-radius: 9px;
+    background: transparent;
+    color: #C6A66B;
+    font-size: 12px;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.restock-btn:hover {
+    background: #C6A66B;
+    color: #24152F;
 }
 
 
