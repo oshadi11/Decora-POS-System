@@ -35,7 +35,7 @@
                     <div class="menu-item-text">Events</div>
                 </a>
 
-                <a href="#" class="menu-item">
+                <a href="inventory.html" class="menu-item">
                     <div class="menu-item-icon">
                         <i class="bi bi-box-seam"></i>
                     </div>
@@ -123,7 +123,7 @@
 
                         <div class="stat-info">
                             <p>Total Events</p>
-                            <h3>128</h3>
+                            <h3 id="totalEventsCount">0</h3>
                         </div>
 
                     </div>
@@ -135,7 +135,7 @@
 
                         <div class="stat-info">
                             <p>Available Items</p>
-                            <h3>782</h3>
+                            <h3 id="availableItemsCount">782</h3>
 
                         </div>
 
@@ -240,22 +240,22 @@
 
                     <div class="actions-grid">
 
-                        <button class="action-card">
+                        <button class="action-card" onclick="window.location.href='booking.html'">
                             <i class="bi bi-calendar-plus"></i>
                             <span>New Booking</span>
                         </button>
 
-                        <button class="action-card">
+                        <button class="action-card" onclick="window.location.href='billing.html'">
                             <i class="bi bi-receipt"></i>
                             <span>Create Bill</span>
                         </button>
 
-                        <button class="action-card">
+                        <button class="action-card" onclick="window.location.href='addItem.html'">
                             <i class="bi bi-box-seam"></i>
                             <span>Add Item</span>
                         </button>
 
-                        <button class="action-card">
+                        <button class="action-card" onclick="window.location.href='decor-preview.html'">
                             <i class="bi bi-palette"></i>
                             <span>Preview Decor</span>
                         </button>
@@ -343,6 +343,7 @@
 
         </div>
     </div>
+    <script src="js/app.js"></script>
 </body>
 
 </html>
